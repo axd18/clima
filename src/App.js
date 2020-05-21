@@ -10,12 +10,17 @@ function App() {
     ciudad: '',
     pais: '' 
    });
+
+   const [consultar, guardarConsultar] = useState(false);
   
    const { ciudad, pais } = busqueda;
 
    useEffect(() => {
-      console.log(ciudad);
-   },[ciudad, pais]);
+      const consultarAPI =  async () => {
+
+      }
+      consultarAPI();
+   },[consultar]);
   
   return (
     <Fragment>
@@ -29,6 +34,7 @@ function App() {
               <Formulario
                 busqueda={busqueda}
                 guardarBusqueda={guardarBusqueda}
+                guardarConsultar={guardarConsultar}
               />
             </div>
             <div className="col m6 s12">
