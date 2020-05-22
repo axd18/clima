@@ -17,7 +17,7 @@ function App() {
 
    useEffect(() => {
       const consultarAPI =  async () => {
-
+        'http://api.openweathermap.org/data/2.5/forecast?q=mardelplata,argentina&appid=524901&APPID=5c7d1df8b2100082eb157efc8a532d37'
       }
       consultarAPI();
    },[consultar]);
